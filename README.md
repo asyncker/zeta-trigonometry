@@ -3,6 +3,10 @@
 To describe zeta, you need to use zeta itself. <br />
 To clearly understand what I mean, you need to replace all formulas that use exp with zeta.
 
+Visual similarity of exp and zeta with certain dynamics:<br />
+https://asyncker.github.io/zeta-trigonometry/img/exp_pow.png <br />
+https://asyncker.github.io/zeta-trigonometry/img/zeta_pow.png <br />
+
 ```math
 \text{zsin}(z) = \frac{\zeta(iz) - \zeta(-iz)}{2i}
 ```
