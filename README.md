@@ -131,6 +131,23 @@ zcos
 53.704274402646339938303512826398070538191704268015
 ```
 
+Zsin zeros can be obtained through:
+```math
+Im(\zeta(i z))
+```
+
+Zcos zeros can be obtained through:
+```math
+Re(\zeta(i z))
+```
+
+```python
+v = 3.4
+print(findroot(lambda x: im(zeta(1j * x)), (v - 0.1, v))) #zsin zeros
+v = 7.2
+print(findroot(lambda x: re(zeta(1j * x)), (v - 0.1, v))) #zcos zeros
+```
+
 Hypothesis:
 The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time?
 
