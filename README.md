@@ -62,11 +62,27 @@ zcosh(−z)=zcosh(z)
 <br />
 
 ```math
+zeta(0) = zcos(0) = zcosh(0) = -1/2
+```
+
+<br />
+
+```math
 \zeta(iz)\zeta(-iz) = \text{zcos}^2(z) + \text{zsin}^2(z)
 ```
 
 ```math
 \zeta(z)\zeta(-z) = \text{zcosh}^2(z) - \text{zsinh}^2(z)
+```
+
+Zsin zeros can be obtained through:
+```math
+Im(\zeta(i z))
+```
+
+Zcos zeros can be obtained through:
+```math
+Re(\zeta(i z))
 ```
 
 <br />
@@ -129,23 +145,6 @@ zcos
 50.671589958084158071867137415810060588229840019825
 52.532149121535002972764837879641386422269629472651
 53.704274402646339938303512826398070538191704268015
-```
-
-Zsin zeros can be obtained through:
-```math
-Im(\zeta(i z))
-```
-
-Zcos zeros can be obtained through:
-```math
-Re(\zeta(i z))
-```
-
-```python
-v = 3.4
-print(findroot(lambda x: im(zeta(1j * x)), (v - 0.1, v))) #zsin zeros
-v = 7.2
-print(findroot(lambda x: re(zeta(1j * x)), (v - 0.1, v))) #zcos zeros
 ```
 
 Hypothesis:
