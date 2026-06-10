@@ -192,7 +192,7 @@ zcos
 ```
 
 Hypothesis:
-The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time? See how it's work on graphics:
+The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time?
 
 zsin(9.7859575487180984754087707349572202650536044454741) <br />
 zcos(13.313727465338546840370551848965717592371385169142) <br />
