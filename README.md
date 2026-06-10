@@ -3,10 +3,6 @@
 To describe zeta, you need to use zeta itself. <br />
 To clearly understand what I mean, you need to replace all formulas that use exp with zeta.
 
-Visual similarity of exp and zeta with the same dynamics, comparing all functions, only exp and zeta behaved almost identically:<br />
-https://asyncker.github.io/zeta-trigonometry/img/exp_pow.png <br />
-https://asyncker.github.io/zeta-trigonometry/img/zeta_pow.png <br />
-
 ```math
 \text{zsin}(z) = \frac{\zeta(iz) - \zeta(-iz)}{2i}
 ```
@@ -75,19 +71,20 @@ zeta(0) = zcos(0) = zcosh(0) = -1/2
 \zeta(z)\zeta(-z) = \text{zcosh}^2(z) - \text{zsinh}^2(z)
 ```
 
-Zsin zeros can be obtained through:
+Zsin all zeros can be obtained through:
+
 ```math
 Im(\zeta(i z))
 ```
 
-Zcos zeros can be obtained through:
+Zcos all zeros can be obtained through:
+
 ```math
 Re(\zeta(i z))
 ```
 
 <br />
-These numbers are extremely strange, as if there's an error here. But if this is correct, then this extreme is related to the zeta function
-<br /><br />
+Zeta all zeros can be obtained through:
 
 ```math
 Im(\zeta(i z) * \zeta(-i z))
