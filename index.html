@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+  <style>
+      body {
+          background-color: #0b0f14;
+      }
+  </style>
+</head>
+
+<body>
+<select id="mode" style="position:fixed;left:10px;top:10px;z-index:1">
+  <option value="1">zsin (green) and zcos (blue)</option>
+  <option value="2">zeta (red) zsin (green) and zcos (blue)</option>
+  <option value="3">subtraction zsin (green) and zcos (blue)</option>
+  <option value="4">subtraction zeta (red) zsin (green) and zcos (blue)</option>
+  <option value="5">5</option>
+</select>
+<canvas id="c"></canvas>
+
+<script src="./js/zcos-zeros.js"></script>
+<script src="./js/zsin-zeros.js"></script>
+<script src="./js/zeta-zeros.js"></script>
+<script src="./js/zetaf-zeros.js"></script>
+<script>
+const c = document.getElementById("c");
+const g = c.getContext("2d");
+
+let sx = 5;
+let sy = 5;
+let ox = 60;
+let oy = innerHeight - 60;
+
+function resize(){
+  c.width = innerWidth;
+  c.height = innerHeight;
+  draw();
+}
+
+function line(a,color){
+  g.strokeStyle = color;
+  g.beginPath();
+  for(let i=0;i<a.length;i++){
+    let x = ox + i*sx;
+    let y = oy - a[i]*sy;
+    if(i) g.lineTo(x,y);
+    else g.moveTo(x,y);
+  }
+  g.stroke();
+}
+
+function axes(){
+  g.strokeStyle="#999";
+  g.beginPath();
+  g.moveTo(0,oy);
+  g.lineTo(c.width,oy);
+  g.moveTo(ox,0);
+  g.lineTo(ox,c.height);
+  g.stroke();
+  g.fillStyle="#fff";
+  for(let x=ox;x<c.width;x+=100){
+    let v=Math.round((x-ox)/sx);
+    g.fillText(v,x,oy+15);
+  }
+  for(let y=oy;y>0;y-=50){
+    let v=Math.round((oy-y)/sy);
+    g.fillText(v,5,y+4);
+  }
+}
+
+function draw(){
+  g.clearRect(0,0,c.width,c.height);
+  axes();
+  const zcos2n = zcos.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
+  const zsin2n = zsin.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
+  if (mode.value == "1") {
+    line(zsin_zeros, "green");
+    line(zcos_zeros, "blue");
+  } else if (mode.value == "2") {
+    line(zeta_zeros, "red");
+    line(zsin_zeros, "green");
+    line(zcos_zeros, "blue");
+  } else if (mode.value == "3") {
+    line(zsin_zeros.map((val, i) => zsin_zeros[i + 1] - val), "green");
+    line(zcos_zeros.map((val, i) => zcos_zeros[i + 1] - val), "blue");
+  } else if (mode.value == "4") {
+    line(zeta_zeros.map((val, i) => zeta_zeros[i + 1] - val), "red");
+    line(zsin_zeros.map((val, i) => zsin_zeros[i + 1] - val), "green");
+    line(zcos_zeros.map((val, i) => zcos_zeros[i + 1] - val), "blue");
+  }
+}
+
+mode.onchange=draw;
+
+c.onwheel=e=>{
+  e.preventDefault();
+  const mx=e.offsetX;
+  const my=e.offsetY;
+  const wx=(mx-ox)/sx;
+  const wy=(oy-my)/sy;
+  const k=e.deltaY>0?0.9:1.1;
+  sx *= k;
+  sy *= k;
+  ox=mx - wx * sx;
+  oy=my + wy * sy;
+  draw();
+};
+
+let drag = false;
+let px = 0;
+let py = 0;
+
+c.onmousedown = e => {
+  drag = true;
+  px = e.clientX;
+  py = e.clientY;
+};
+
+onmouseup = () => drag = false;
+
+onmousemove = e =>{
+  if (!drag) return;
+  ox += e.clientX - px;
+  oy += e.clientY - py;
+  px = e.clientX;
+  py = e.clientY;
+  draw();
+};
+
+addEventListener("resize",resize);
+resize();
+</script>
+</body>
