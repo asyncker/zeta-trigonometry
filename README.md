@@ -71,24 +71,9 @@ zeta(0) = zcos(0) = zcosh(0) = -1/2
 \zeta(z)\zeta(-z) = \text{zcosh}^2(z) - \text{zsinh}^2(z)
 ```
 
-Zsin all zeros can be obtained through:
-
-```math
-Im(\zeta(i z))
-```
-
-Zcos all zeros can be obtained through:
-
-```math
-Re(\zeta(i z))
-```
-
-<br />
-Zeta all zeros can be obtained through:
-
-```math
-Im(\zeta(i z) * \zeta(-i z))
-```
+The zeros of zsin(z) lie where `Im(ζ(iz))` <br />
+The zeros of zcos(z) lie where `Re(ζ(iz))` <br />
+The zeros of f(x) lie where `Im(ζ(iz) * ζ(-iz))` <br />
 
 <br />
 
