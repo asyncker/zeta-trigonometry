@@ -70,8 +70,8 @@ function axes(){
 function draw(){
   g.clearRect(0,0,c.width,c.height);
   axes();
-  const zcos2n = zcos.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
-  const zsin2n = zsin.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
+  const zcos2n = zcos_zeros.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
+  const zsin2n = zsin_zeros.slice(2).filter((_, i) => i % 2 === 0); // Similar to the zeta function, but over time it does not converge with the zeta functions, it is necessary to understand when the grama points will allow zeta, zcos, zsin to diverge.
   if (mode.value == "1") {
     line(zsin_zeros, "green");
     line(zcos_zeros, "blue");
