@@ -1,7 +1,7 @@
-# Zeta Trigonometry
+# Zeta Based Functions
 
 To describe zeta, you need to use zeta itself. <br />
-To clearly understand what I mean, you need to replace all formulas that use exp with zeta.
+Define zeta‑based functions as symmetric combinations of ζ
 
 ```math
 \text{zsin}(z) = \frac{\zeta(iz) - \zeta(-iz)}{2i}
@@ -94,12 +94,15 @@ Im(\zeta(i z) * \zeta(-i z))
 
 ```python
 def find_zeros():
-    step = prev = cur = 0.0
+    step = prev = cur = lastzero = 0.0
     while True:
-        step += 0.1
+        step += 0.01
         t = step + 0.5j
         if prev * cur < 0.0:
-            zerot = findroot(lambda x: im(zeta(1j * x) * zeta(-x * 1j)), (t - 0.1, t))
+            zerot = findroot(lambda x: im(zeta(1j * x) * zeta(-x * 1j)), (t - 0.01, t))
+            if (lastzero == zerot):
+                continue
+            lastzero = zerot
             print(zerot)
         prev = cur
         cur = im(zeta(1j * t) * zeta(-t * 1j))
