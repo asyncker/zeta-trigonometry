@@ -71,6 +71,12 @@ zeta(0) = zcos(0) = zcosh(0) = -1/2
 \zeta(z)\zeta(-z) = \text{zcosh}^2(z) - \text{zsinh}^2(z)
 ```
 
+Graphics zeros zsin (green), zcos (blue)
+<img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos.png">
+
+Graphics subtract zeros zsin (green), zcos (blue)
+<img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos-sub.png">
+
 The zeros of zsin(z) lie where `Im(ζ(iz))` <br />
 The zeros of zcos(z) lie where `Re(ζ(iz))` <br />
 The zeros of f(x) lie where `Im(ζ(iz) * ζ(-iz))` <br />
@@ -186,7 +192,7 @@ zcos
 ```
 
 Hypothesis:
-The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time?
+The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time? See how it's work on graphics:
 
 zsin(9.7859575487180984754087707349572202650536044454741) <br />
 zcos(13.313727465338546840370551848965717592371385169142) <br />
@@ -200,8 +206,10 @@ zsin(20.930100613681927365612187289676853134924003353665) <br />
 <script src="./zcos-zeros.js"></script>
 <script src="./zsin-zeros.js"></script>
 <script>
-    for (let i = 1; i < 20001; i++) {
-        console.log(zsin[i] <= zcos[i]); // 20k all true except first
+    for (let i = 1; i < 30001; i++) {
+        console.log(zsin_zeros[i] <= zcos_zeros[i]); // 30k all true except first
     }
 </script>
 ```
+
+See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
