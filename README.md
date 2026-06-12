@@ -49,8 +49,8 @@ Graphics zeros zsinh (green), zcosh (blue)
 Graphics subtract zeros zsinh (green), zcosh (blue)
 <img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos-sub.png">
 
-The zeros of zsinh(z) lie where `Im(ζ(iz))` <br />
-The zeros of zcosh(z) lie where `Re(ζ(iz))` <br />
+The zeros of zsinh(z) lie where `Im(ζ(z))` <br />
+The zeros of zcosh(z) lie where `Re(ζ(z))` <br />
 The zeros of f(x) lie where `Im(ζ(iz) * ζ(-iz))` <br />
 
 <br />
@@ -81,7 +81,7 @@ If we take the derivative of zsinh using exp, then the function becomes non-clos
 L(z) =  \frac{\zeta'(z)}{\zeta(z)}
 ```
 
-zsinh(z):
+zeros `zsinh(z)` or `Im(ζ(zi))`:
 ```
 3.2047218910247483327471239066123833234226165500238
 9.7859575487180984754087707349572202650536044454741
@@ -102,7 +102,7 @@ zsinh(z):
 43.594288278872638977580078529011821576564604886617
 ```
 
-zcosh(z):
+zeros `zcosh(z)` or `Re(ζ(zi))`:
 ```
 0.9935091730293694185539021328479738819717254841358
 13.313727465338546840370551848965717592371385169142
@@ -123,7 +123,7 @@ zcosh(z):
 44.41584713569121035712923735768781676031011664889
 ```
 
-zsinh(z + (0.5 + -0.5i))
+zeros `zsinh(z + (0.5 + -0.5i))` or `Im(ζ(0.5 + zi))`
 ```
 3.4362182260869615916559654256564728880809333098964
 9.6669080561301921412615355231022322127437131120058
@@ -144,7 +144,7 @@ zsinh(z + (0.5 + -0.5i))
 43.327073280914999519496122165406805781309880941364
 ```
 
-zcosh(z + (0.5 + -0.5i))
+zeros `zcosh(z + (0.5 + -0.5i))` or `Re(ζ(0.5 + zi))`
 ```
 0.81954532942584837480795010982022201652948441941523
 14.134725141734693790457251983562470270654175000969
@@ -165,7 +165,7 @@ zcosh(z + (0.5 + -0.5i))
 43.993527286302274047022717411273322828070643802401
 ```
 
-`Im(ζ(iz) * ζ(-iz))`
+zeros `Im(ζ(iz) * ζ(-iz))`
 ```
 1.75120485569981102617559800000653352495582030687554502211281
 10.5173912195969286553091564800593022170956352173281625657916
