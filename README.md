@@ -209,3 +209,12 @@ zsinh(20.930100613681927365612187289676853134924003353665) <br />
 ```
 
 See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
+
+
+<br />Non-Archimedean<br />
+w^-1 = eps <br />
+eps^-1 = w <br />
+
+Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
+<img src="https://github.com/asyncker/zeta-trigonometry/blob/main/img/scale_plane_algebra.png">
+<br />
