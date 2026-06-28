@@ -216,5 +216,6 @@ w^-1 = eps <br />
 eps^-1 = w <br />
 
 Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
+The x-axis is not a real number, in this context it is needed to describe the scale as a multiplication of eps or w <br />
 <img src="https://github.com/asyncker/zeta-trigonometry/blob/main/img/scale_plane_algebra.png">
 <br />
