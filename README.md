@@ -215,6 +215,10 @@ See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
 w^-1 = eps <br />
 eps^-1 = w <br />
 
+```
+ln(w^eps) = eps * ln(w)
+```
+
 Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
 The x-axis is the multiplied coefficient for eps or w  <br />
 <img src="https://github.com/asyncker/zeta-trigonometry/blob/main/img/scale_plane_algebra.png">
