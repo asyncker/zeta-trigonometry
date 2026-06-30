@@ -216,11 +216,14 @@ w^-1 = eps <br />
 eps^-1 = w <br />
 
 ```
-ln(w^eps) = ln(w) * eps
-ln(eps^w) = ln(eps) * w
-
 ln(eps) = -ln(w)
 ln(w) = -ln(eps)
+
+ln(w^eps) = -eps * ln(eps)
+ln(eps^w) = -w * ln(w)
+
+eps^eps = exp(-eps * ln(eps))
+w^w = exp(-w * ln(w))
 
 ln(eps * w) = 0
 ln(w) / ln(eps) = -1
