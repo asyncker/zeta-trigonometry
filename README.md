@@ -217,6 +217,13 @@ eps^-1 = w <br />
 
 ```
 ln(w^eps) = ln(w) * eps
+ln(eps^w) = ln(eps) * w
+
+1/ln(eps) = -1/ln(w)
+1/ln(w) = -1/ln(eps)
+
+ln(eps * w) = 0
+ln(w) / ln(eps) = -1
 ```
 
 Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
