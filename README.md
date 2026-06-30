@@ -222,8 +222,8 @@ ln(w) = -ln(eps)
 ln(w^eps) = -eps * ln(eps)
 ln(eps^w) = -w * ln(w)
 
-eps^eps = exp(-eps * ln(eps))
-w^w = exp(-w * ln(w))
+ln(eps^eps) = -eps * ln(w)
+ln(w^w) = -w * ln(eps)
 
 ln(eps * w) = 0
 ln(w) / ln(eps) = -1
