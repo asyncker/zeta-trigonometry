@@ -219,8 +219,8 @@ eps^-1 = w <br />
 ln(w^eps) = ln(w) * eps
 ln(eps^w) = ln(eps) * w
 
-1/ln(eps) = -1/ln(w)
-1/ln(w) = -1/ln(eps)
+ln(eps) = -ln(w)
+ln(w) = -ln(eps)
 
 ln(eps * w) = 0
 ln(w) / ln(eps) = -1
