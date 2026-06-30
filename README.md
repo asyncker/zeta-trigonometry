@@ -214,6 +214,7 @@ See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
 <br />Non-Archimedean<br />
 w^-1 = eps <br />
 eps^-1 = w <br />
+w * eps = 1 <br />
 
 ```
 ln(eps) = -ln(w)
