@@ -228,6 +228,8 @@ ln(w^w) = -w * ln(eps)
 
 ln(eps * w) = 0
 ln(w) / ln(eps) = -1
+
+|eps * (2 + 2i)| = |eps| * |2 + 2i| = eps * 2.828...
 ```
 
 Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
