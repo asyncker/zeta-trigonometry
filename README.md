@@ -4,31 +4,31 @@ To describe zeta, you need to use zeta itself. <br />
 Define zeta‑based functions as symmetric combinations of ζ
 
 ```math
-\text{zsinh}(z) = \frac{\zeta(z) - \zeta(-z)}{2}
+\text{zsinh}(z, t) = \frac{\zeta(z + t) - \zeta(-z + t)}{2}
 ```
 
 ```math
-\text{zcosh}(z) = \frac{\zeta(z) + \zeta(-z)}{2}
-```
-
-<br />
-
-```math
-zsinh(−z)=−zsinh(z)
-```
-
-```math
-zcosh(−z)=zcosh(z)
+\text{zcosh}(z, t) = \frac{\zeta(z + t) + \zeta(-z + t)}{2}
 ```
 
 <br />
 
 ```math
-\zeta(-z) = zcosh(z) - zsinh(z)
+zsinh(−z, t) = −zsinh(z, t)
 ```
 
 ```math
-\zeta(z) = zcosh(z) + zsinh(z)
+zcosh(−z, t) = zcosh(z, t)
+```
+
+<br />
+
+```math
+\zeta(-z) = zcosh(z, 0) - zsinh(z, 0)
+```
+
+```math
+\zeta(z) = zcosh(z, 0) + zsinh(z, 0)
 ```
 
 <br />
@@ -40,13 +40,13 @@ zeta(0) = zcosh(0) = -1/2
 <br />
 
 ```math
-\zeta(z)\zeta(-z) = \text{zcosh}^2(z) - \text{zsinh}^2(z)
+\zeta(z)\zeta(-z) = \text{zcosh}^2(z, 0) - \text{zsinh}^2(z, 0)
 ```
 
-Graphics zeros zsinh (green), zcosh (blue)
+Graphics zeros zsinh (green), zcosh (blue), t = 0
 <img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos.png">
 
-Graphics subtract zeros zsinh (green), zcosh (blue)
+Graphics subtract zeros zsinh (green), zcosh (blue), t = 0
 <img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos-sub.png">
 
 The zeros of zsinh(z) lie where `Im(ζ(z))` <br />
