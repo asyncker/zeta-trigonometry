@@ -49,8 +49,8 @@ Graphics zeros zsinh (green), zcosh (blue), t = 0
 Graphics subtract zeros zsinh (green), zcosh (blue), t = 0
 <img src="https://asyncker.github.io/zeta-trigonometry/img/zeros-zsin-zcos-sub.png">
 
-The zeros of zsinh(z) lie where `Im(ζ(z))` <br />
-The zeros of zcosh(z) lie where `Re(ζ(z))` <br />
+The zeros of zsinh(z, t) lie where `Im(ζ(z))` <br />
+The zeros of zcosh(z, t) lie where `Re(ζ(z))` <br />
 The zeros of f(x) lie where `Im(ζ(iz) * ζ(-iz))` <br />
 
 <br />
@@ -81,7 +81,7 @@ If we take the derivative of zsinh using exp, then the function becomes non-clos
 L(z) =  \frac{\zeta'(z)}{\zeta(z)}
 ```
 
-zeros `(ζ(z) - ζ(-z)) / 2` or `Im(ζ(z))` or `zsinh(z, 0.0)`:
+zeros `(ζ(z) - ζ(-z)) / 2` or `Im(ζ(z))` or `zsinh(z, 0.0)`
 ```
 3.2047218910247483327471239066123833234226165500238
 9.7859575487180984754087707349572202650536044454741
@@ -102,7 +102,7 @@ zeros `(ζ(z) - ζ(-z)) / 2` or `Im(ζ(z))` or `zsinh(z, 0.0)`:
 43.594288278872638977580078529011821576564604886617
 ```
 
-zeros `(ζ(z) + ζ(-z)) / 2` or `Re(ζ(z))` or `zcosh(z, 0.0)`:
+zeros `(ζ(z) + ζ(-z)) / 2` or `Re(ζ(z))` or `zcosh(z, 0.0)`
 ```
 0.9935091730293694185539021328479738819717254841358
 13.313727465338546840370551848965717592371385169142
@@ -190,13 +190,13 @@ zeros `Im(ζ(iz) * ζ(-iz))`
 Hypothesis:
 The zeros of the zeta cosine are successively greater than the zeros of the zeta sine. The question is, is this ever violated other than the first time? (t = 0)
 
-zsinh(9.7859575487180984754087707349572202650536044454741) <br />
-zcosh(13.313727465338546840370551848965717592371385169142) <br />
-zsinh(14.218916287245118538854216319543702469790394964131) <br />
-zcosh(15.396602022366452188684401838753663894954581856449) <br />
-zsinh(17.858842108570570753141317568581125429075310852149) <br />
-zcosh(19.969277330847164008092660957449002016900807761801) <br />
-zsinh(20.930100613681927365612187289676853134924003353665) <br />
+zsinh(9.7859575487180984754087707349572202650536044454741, 0.0) <br />
+zcosh(13.313727465338546840370551848965717592371385169142, 0.0) <br />
+zsinh(14.218916287245118538854216319543702469790394964131, 0.0) <br />
+zcosh(15.396602022366452188684401838753663894954581856449, 0.0) <br />
+zsinh(17.858842108570570753141317568581125429075310852149, 0.0) <br />
+zcosh(19.969277330847164008092660957449002016900807761801, 0.0) <br />
+zsinh(20.930100613681927365612187289676853134924003353665, 0.0) <br />
 
 ```js
 <script src="./zcosh-zeros.js"></script>
