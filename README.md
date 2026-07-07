@@ -210,6 +210,19 @@ zsinh(20.930100613681927365612187289676853134924003353665, 0.0) <br />
 
 See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
 
+<br />12-adic numbers<br />
+
+```math
+\zeta(-1) = -\frac{1}{12} = -0.1_{12}
+```
+
+```math
+\zeta(0) = -\frac{1}{2} = -0.6_{12}
+```
+
+```math
+\zeta(2) = \frac{\pi^2}{6} = \pi^2 \cdot 0.2_{12}
+```
 
 <br />Non-Archimedean<br />
 w^-1 = eps <br />
