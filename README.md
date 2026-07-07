@@ -248,7 +248,7 @@ a = 2^n * 5^m (all non-periodic fractions for the 10-adic)
 
 3 * 0.333 + 0.001 = 1.0
 3 * 0.333333... + eps = 1.0
-(1/3 + eps * 1/3) + (1/3 + eps * 1/3) + (1/3 + eps * 1/3) = 1.0
+(0.333333... + eps * 1/3) + (0.333333... + eps * 1/3) + (0.333333... + eps * 1/3) = 1.0
 ```
 
 Scale plane (x-asis it's mult y-asis it's power (example x * y^2)):<br />
