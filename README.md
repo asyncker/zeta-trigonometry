@@ -228,6 +228,8 @@ t = 1/2 - 0.00001
 43.993543569869915147558964285592053160826471283816
 ```
 
+A possible reason for the alternation of zeros: the phase of arg(ζ(it)) changes almost monotonically, its derivative ~= −ln(t/2pi) plus limited fluctuations, and with increasing t, the logarithm suppresses the fluctuations more and more. The zeros of Re (phase ≡ pi/2 mod pi) and the zeros of Im (phase ≡ 0 mod pi) must strictly alternate with a monotonic phase.
+
 
 ```js
 <script src="./zcosh-zeros.js"></script>
