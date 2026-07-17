@@ -243,6 +243,20 @@ A possible reason for the alternation of zeros: the phase of arg(ζ(it)) changes
 
 See graphics on https://asyncker.github.io/zeta-trigonometry/index.html
 
+zeta function
+```
+zeta(z) = pow(2pi, z - 1) * sin(z * pi/2) * 2 * gamma(-z + 1) * zeta(-z + 1)
+```
+
+zeta function if use exp and gamma
+```
+phase = i*pi/2
+```
+
+```
+zeta(z) = exp((z - 1) * ln(2pi)) * exp(-phase) * (exp(z * phase) - exp(-z * phase)) * gamma(1 - z) * zeta(1 - z)
+```
+
 <br />12-adic numbers<br />
 
 ```math
