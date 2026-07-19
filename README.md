@@ -271,7 +271,7 @@ zeta(z) = exp((z - 1) * ln(2pi)) * exp(-phase) * (exp(z * phase) - exp(-z * phas
 \zeta(2) = \frac{\pi^2}{6} = \pi^2 \cdot 0.2_{12}
 ```
 
-<br />Non-Archimedean<br />
+<br />Non-Archimedean + Hyperreal + p-adic + Laurent Ring<br />
 w^-1 = eps <br />
 eps^-1 = w <br />
 w * eps = 1 <br />
