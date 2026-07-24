@@ -276,6 +276,12 @@ w^-1 = eps <br />
 eps^-1 = w <br />
 w * eps = 1 <br />
 
+eps and w is the solution of the equation:
+```
+(x - 1) * 1/x = 0.999999...
+x = w
+```
+
 ```
 ln(eps) = -ln(w)
 ln(w) = -ln(eps)
@@ -288,8 +294,6 @@ ln(w^w) = -w * ln(eps)
 
 ln(eps * w) = 0
 ln(w) / ln(eps) = -1
-
-|eps * (2 + 2i)| = |eps| * |2 + 2i| = eps * 2.828...
 
 a = 2^n * 5^m (all non-periodic fractions for the 10-adic)
 
